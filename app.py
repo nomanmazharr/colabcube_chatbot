@@ -6,10 +6,10 @@ from groq import Groq
 
 # Load environment variables from .env file
 load_dotenv()
-
+groq_api = os.getenv("GROQ_API_KEY")
 # Initialize Groq client with the GROQ API key
 groq_client = Groq(
-    api_key=os.getenv("GROQ_API_KEY")
+    api_key=groq_api
 )
 # Streamlit App Title
 st.title("GROQ Virtual Assistant")
