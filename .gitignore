@@ -1,0 +1,4 @@
+.env
+knowledge_base/
+chatbot/
+Groq_chatbot.py
